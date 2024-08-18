@@ -5,6 +5,7 @@ public class print1toN {
         System.out.println("Enter N");
         int n=sc.nextInt();
         printn(1,n);
+        sc.close();
     }
     public static void printn(int i,int n){
         if(i>n) return;
