@@ -1,17 +1,20 @@
 /**
  * InnerPrintName
  */
+import java.util.*;
 public class InnerPrintName {
-    static int count=0;
+    
 public static void main(String[] args) {
-    printname();
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    printname(1,n);
 }
 
-public static void printname(){
-    if(count==5) return;
+public static void printname(int i,int n){
+    if(i>n) return;
     System.out.println("Nilesh");
-    count++;
-    printname();
+    
+    printname(i+1,n);
 }
     
 }
