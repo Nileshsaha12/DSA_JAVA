@@ -1,3 +1,4 @@
+import java.util.*;
 public class MergeSort {
     public static void main(String[] args) {
         int[] arr={3,5,3,5,2,432,2,4};
@@ -13,49 +14,32 @@ public class MergeSort {
         Merge(arr,l,mid,r);
 
     }
-    public static void Merge(int[] arr,int left,int mid,int right){
-        int i, j, k;
-        int n1 = mid - left + 1;
-        int n2 = right - mid;
-    
-        // Create temporary arrays
-        int[] lArr=new int[n1];
-        int[] rArr=new int[n2];
-    
-        // Copy data to temporary arrays
-        for (i = 0; i < n1; i++)
-            lArr[i] = arr[left + i];
-        for (j = 0; j < n2; j++)
-            rArr[j] = arr[mid + 1 + j];
-    
-        // Merge the temporary arrays back into arr[left..right]
-        i = 0;
-        j = 0;
-        k = left;
-        while (i < n1 && j < n2) {
-            if (lArr[i] <= rArr[j]) {
-                arr[k] = lArr[i];
-                i++;
+    public static void Merge(int[] arr,int l,int mid,int r){
+        int left = l;
+        int right=mid+1;
+        List<Integer> arr2=new ArrayList<>();
+        while(left<=mid && right<=r){
+            if(arr[left]<=arr[right]){
+                arr2.add(arr[left]);
+                left++;
             }
-            else {
-                arr[k] = rArr[j];
-                j++;
+            else{
+                arr2.add(arr[right]);
+                right++;
             }
-            k++;
+            
         }
-    
-        // Copy the remaining elements of lArr[], if any
-        while (i < n1) {
-            arr[k] = lArr[i];
-            i++;
-            k++;
+        while(left<=mid){
+            arr2.add(arr[left]);
+            left++;
+            
         }
-    
-        // Copy the remaining elements of rArr[], if any
-        while (j < n2) {
-            arr[k] = rArr[j];
-            j++;
-            k++;
+        while(right<=r){
+            arr2.add(arr[right]);
+            right++;
+        }
+        for(int i=l;i<=r;i++){
+            arr[i]=arr2.get(i-l);
         }
     }
 }
