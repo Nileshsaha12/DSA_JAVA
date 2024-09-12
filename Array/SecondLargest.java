@@ -2,8 +2,8 @@ import java.util.Arrays;
 
 public class SecondLargest{
     public static void main(String[] args) {
-        int[] arr={5,4,6,36,92,63,68,999};
-        int n=arr.length;
+        int[] arr={5,4,6,36,92,63,608,999};
+       
         //System.out.println(Brute(arr));
        // System.out.println(Better(arr));
         System.out.println(optimal(arr));
