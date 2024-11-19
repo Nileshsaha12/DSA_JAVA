@@ -11,7 +11,6 @@ public class MaxConOnes {
             if(arr[i]==1){
                 c++;
                 if(max<c) max=c;
-
             }
             else{
                 c=0;
