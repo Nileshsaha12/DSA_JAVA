@@ -1,0 +1,52 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "SecondLargest",
+      "request": "launch",
+      "mainClass": "Array.SecondLargest",
+      "projectName": "DSA+JAVA_5a3de749"
+    },
+    {
+      "type": "java",
+      "name": "QuickSort",
+      "request": "launch",
+      "mainClass": "QuickSort",
+      "projectName": "DSA+JAVA_5a3de749"
+    },
+    {
+      "type": "java",
+      "name": "SelectionSort",
+      "request": "launch",
+      "mainClass": "SelectionSort",
+      "projectName": "DSA+JAVA_5a3de749"
+    },
+    {
+      "type": "java",
+      "name": "SelectionSort",
+      "request": "launch",
+      "mainClass": "Sorting.SelectionSort",
+      "projectName": "DSA+JAVA_5a3de749"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
