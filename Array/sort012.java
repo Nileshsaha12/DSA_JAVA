@@ -20,7 +20,7 @@ public class sort012 {
         for(int i=ct0;i<(ct0+ct1);i++){
             arr[i]=1;
         }
-        for(int i=(ct0+ct1);i<n;i++){
+        for(int i=(ct0+ct1);i<(ct0+ct1+ct2);i++){
             arr[i]=2;
         }
         for(int i=0;i<n;i++){
