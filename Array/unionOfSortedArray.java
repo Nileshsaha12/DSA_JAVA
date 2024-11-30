@@ -25,7 +25,7 @@ public class unionOfSortedArray {
 
     public static void optimal(int[] arr1,int[] arr2){
         List<Integer> union = new ArrayList<>();
-        int i=0,j=0,k=0;
+        int i=0,j=0;
         while(i<arr1.length && j<arr2.length){
             if(arr1[i] <= arr2[j]){
                 if(union.size() == 0|| union.get(union.size() - 1)!=arr1[i]){
