@@ -47,6 +47,7 @@ public class ThreeSum {
         }
         System.out.println(ls.toString());
     }
+    
     public static void optimal(int[] arr){
         List<List<Integer>> ls=new ArrayList<>();
         int n=arr.length;
